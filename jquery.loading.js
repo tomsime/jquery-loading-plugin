@@ -96,6 +96,7 @@
 					, mleft:	0
 					, width:	'100%'
 					, height:	'100%'
+					, position:	'fixed'
 				};
 			} else {
 
@@ -107,12 +108,13 @@
 					, mleft:	parseInt(this.$element.css('marginLeft'))
 					, width:	this.$element.outerWidth()
 					, height:	this.$element.outerHeight()
+					, position:	'absolute'
 				};
 			}
 
 			// Define CSS
 			this.$div.css({
-					position:				'absolute'
+					position:				this.info.position
 					, display:				'block'
 					, top:					(this.info.top + this.info.mtop)
 					, left:					(this.info.left + this.info.mleft)
